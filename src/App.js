@@ -6,6 +6,7 @@ import { useState } from 'react';
 import React from 'react';
 
 function App() {
+  // Usestate
   const [items, setItems] = useState([
     {
       id: 1,
