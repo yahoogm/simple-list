@@ -1,3 +1,6 @@
+# Contibutor
+If you wanna make a changes to my repo, please make a commit of your changes
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
