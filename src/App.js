@@ -4,34 +4,24 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import AddItem from './components/content/add-item/AddItem';
 import Search from './components/content/search/Search';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import React from 'react';
 
 function App() {
-  const [items, setItems] = useState([
-    {
-      id: 1,
-      checked: false,
-      item: 'item 1',
-    },
-    {
-      id: 2,
-      checked: false,
-      item: 'item 2',
-    },
-    {
-      id: 3,
-      checked: false,
-      item: 'item 3',
-    },
-  ]);
-
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shop')) || []);
   const [newItem, setNewItem] = useState('');
   const [search, setSearch] = useState('');
 
+  // useEffect is asyncronous
+  useEffect(() => {
+    localStorage.setItem('shop', JSON.stringify(items));
+    console.log(localStorage);
+  }, [items]);
+
   // Function to add new Item
   const addItem = (item) => {
-    const myNewItem = { id: Date.now(), checked: false, item };
+    const id = items.length ? items[items.length - 1].id + 1 : 1;
+    const myNewItem = { id: id, checked: false, item };
     const listItems = [...items, myNewItem];
     setItems(listItems);
   };
