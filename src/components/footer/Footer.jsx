@@ -1,9 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const Footer = ({ length }) => {
   return (
-    <footer className="absolute bottom-0 bg-green-300 w-full p-3 text-center font-semibold">
-      {length} {length === 1 ? 'List item' : 'List items'}
+    <footer className="absolute bottom-0 bg-green-300 w-full p-3 text-center font-semibold text-white font-mono">
+      {length} {length === 1 ? "List item" : "List items"}
     </footer>
   );
 };
