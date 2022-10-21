@@ -1,5 +1,8 @@
-# Contibutor
-If you wanna make a changes to my repo, please make a commit of your changes
+# How to use CRUD for change items in Database
+1. Write -> npx json-server -p 3500 -w data/db.json
+2. -p -> is a port of you wanna use, etc: 3500
+3. -w -> is make terminal watch your changes in db, is succes or not
+4. data/db.json -> file database, if you wanna look something changes in you database and placeholder data
 
 # Getting Started with Create React App
 
