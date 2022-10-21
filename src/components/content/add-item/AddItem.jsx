@@ -18,7 +18,7 @@ const AddItem = ({ handleSubmit, newItem, setNewItem }) => {
         ref={inputRef}
       />
       <button type="submit" className="bg-green-300 p-3 rounded-md  shadow-xl" aria-label="Add Item" onClick={() => inputRef.current.focus()}>
-        <FaPlus type="submit" className="text-white" aria-label="Add Item" onClick={() => inputRef.current.focus()} />
+        <FaPlus type="submit" className="text-white`" aria-label="Add Item" onClick={() => inputRef.current.focus()} />
       </button>
     </form>
   );
