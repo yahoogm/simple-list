@@ -1,4 +1,4 @@
-# How to use CRUD for change items in Database
+# Follow this step to use the App with CRUD for change items in Database
 1. Write -> npx json-server -p 3500 -w data/db.json
 2. -p -> is a port of you wanna use, etc: 3500
 3. -w -> is make terminal watch your changes in db, is succes or not
